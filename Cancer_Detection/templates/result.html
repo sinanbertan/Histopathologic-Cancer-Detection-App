@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='assets/logo1.png') }}" alt="Logo" class="logo">
+            <h1 class="title">CANCER DETECTION APP</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="result-section">
+            <h2>Prediction Result</h2>
+            <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+            <p><strong>{{ result }}</strong></p>
+            <a href="{{ url_for('index') }}" class="predict-btn">Try Again.</a>
+            <div class="upload-message">
+                {{ message }}
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cancer Prediction. All rights reserved.</p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sinanbavi104@gmail.com">sinanbavi104@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>

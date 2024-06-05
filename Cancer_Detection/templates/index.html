@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Prediction</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiff.js/0.11.1/tiff.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/static/assets/logo1.png" alt="Logo" class="logo">
+            <h1 class="title">CANCER DETECTION APP</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="upload-section">
+            <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+                <label for="file-input" class="custom-file-upload">
+                    <i class="fas fa-cloud-upload-alt"></i> Upload images
+                </label>
+                <input type="file" id="file-input" name="file" accept=".tif, .jpg, .jpeg, .png">
+                <button type="submit" class="predict-btn" id="predict-btn">Predict</button>
+            </form>
+            <div id="alert-message" style="display:none; margin-top: 10px; color: green; font-weight: bold;"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="con-foot">
+            <p>&copy; 2024 Cancer Prediction. All rights reserved.</p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sinanbavli04@gmail.com">sinanbavli04@gmail.com</a>
+        </div>
+    </footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
