@@ -88,16 +88,16 @@ The CNN model was trained using the following steps:
 * Saving the trained model for inference in the web application.
 ## Screenshots
 
-#### Block theme of CNN model
+#### Block theme of CNN model:
 ![App Screenshot](https://github.com/sinanbertan/Histopathologic-Cancer-Detection-App/blob/main/Cancer_Detection/static/assets/Cnn.drawio.png)
 
-#### home page of website
+#### Home page of website:
 ![App Screenshot](https://github.com/sinanbertan/Histopathologic-Cancer-Detection-App/blob/main/Cancer_Detection/static/assets/home.png)
 
-#### uploadig an image to website
+#### Uploading an image to the website:
 ![App Screenshot](https://github.com/sinanbertan/Histopathologic-Cancer-Detection-App/blob/main/Cancer_Detection/static/assets/home1.png)
 
-#### result page 
+#### Result page: 
 ![App Screenshot](https://github.com/sinanbertan/Histopathologic-Cancer-Detection-App/blob/main/Cancer_Detection/static/assets/result.png)
 
 ## Contributing
