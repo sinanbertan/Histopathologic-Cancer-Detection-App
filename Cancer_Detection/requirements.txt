@@ -1,0 +1,12 @@
+flask
+keras
+tensorflow
+werkzeug
+scikeras
+scikit-learn
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+opencv-python
