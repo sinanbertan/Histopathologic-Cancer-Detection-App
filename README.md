@@ -37,7 +37,6 @@ https://www.kaggle.com/c/histopathologic-cancer-detection/data
 - **Deep Learning:** TensorFlow, Keras, scikit-learn, SciKeras
 - **Data Processing:** Pandas, NumPy
 - **Visualization:** Matplotlib, Plotly, Seaborn
-- **Image Processing:** OpenCV (cv2)
 ## Installation
 
 To run this project locally, follow these steps:
@@ -81,7 +80,7 @@ Navigate to http://127.0.0.1:5000 in your web browser to view and interact with 
 
 The CNN model was trained using the following steps:
 
-*  Preprocessing the histopathological images using OpenCV.
+*  Preprocessing the histopathological images using CNN.
 * Splitting the dataset into training and validation sets.
 * Defining the CNN architecture using Keras and TensorFlow.
 * Training the model on the training set and validating it on the validation set.
